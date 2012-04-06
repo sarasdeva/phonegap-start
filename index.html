@@ -1,63 +1,74 @@
-<!doctype html>
-<html>
-	<head>
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
-		<title>Training App</title>
-		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
-		
-		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="assets/js/xui.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="assets/js/lawnchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="assets/js/lawnchair/adaptors/DOMStorageAdaptor.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="assets/js/lawnchair/adaptors/WebkitSQLiteAdaptor.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="assets/js/lawnchair/Lawnchair.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="assets/js/dsl.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
-		
-	</head>
-	<body>
- 		<div id="title_bar">Phone<strong>Gap</strong> Training App</div>
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>E-Learning System</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
+</head> 
+<body> 
 
-		<div id="welcome" class="view">
-		  <div class="app_button" id="map_button">Show My Location</div>
-  	      <div class="app_button" id="settings_button">Settings</div>
-		</div>
+<div data-role="page" id="TopicsList">
 
-		<div id="map" class="view">
-		  <div class="map_image">
-              <img id="static_map" src="assets/img/staticmap.png">
-		  </div>
-		  <p>This is where you are</p>
-		  <div class="app_button" id="welcome_button">Go Back</div>
-		</div>
+	<div data-role="header">
+		<h1>Training Topics</h1>		
+	</div><!-- /header -->
 
-		<div id="settings" class="view">
-		  <form id="settings_form">
-		    <fieldset>
-		      <legend>Map Type</legend>
-			  <input type="radio" name="map" value="roadmap" checked>Road Map<br/>
-		      <input type="radio" name="map" value="satellite">Satellite<br/>
-		      <input type="radio" name="map" value="terrain">Terrain<br/>
-		      <input type="radio" name="map" value="hybrid">Hybrid<br/>
-		    </fieldset>
-		    <fieldset>
-		      <legend>Zoom Level</legend>
-  		      <input type="radio" name="zoom" value="10">Super Far<br/>
-  		      <input type="radio" name="zoom" value="12">Far<br/>
-  		      <input type="radio" name="zoom" value="15" checked>Normal<br/>
-  		      <input type="radio" name="zoom" value="18">Close<br/>
-  		      <input type="radio" name="zoom" value="20">Super Close<br/>
-  		     </fieldset>
-		      <button id="save_button">Save</button>
-	      </form>
-		</div>
-
-	</body>
+	<div data-role="content">	
+		<ul data-role="listview" data-split-icon="gear" data-split-theme="d" data-inset="true" data-filter="true">
+			<li>
+				<a href="TrainingDetails.html">Human Resource Compliance</a>
+				<a href="TrainingRegister.html"  data-rel="dialog" data-transition="slideup">Register</a>
+			</li>
+			<li>
+				<a href="TrainingDetails.html">Change Management</a>
+				<a href="TrainingRegister.html"  data-rel="dialog" data-transition="slideup">Register</a>
+			</li>
+			<li>
+				<a href="TrainingDetails.html">Building Positive Communication Skills</a>
+				<a href="TrainingRegister.html"  data-rel="dialog" data-transition="slideup">Register</a>
+			</li>
+			<li>
+				<a href="TrainingDetails.html">Career Development</a>
+				<a href="TrainingRegister.html"  data-rel="dialog" data-transition="slideup">Register</a>
+			</li>
+			<li>
+				<a href="TrainingDetails.html">Decision Making Skills</a>
+				<a href="TrainingRegister.html"  data-rel="dialog" data-transition="slideup">Register</a>
+			</li>
+			<li>
+				<a href="TrainingDetails.html">Team Building</a>
+				<a href="TrainingRegister.html"  data-rel="dialog" data-transition="slideup">Register</a>
+			</li>
+			<li>
+				<a href="TrainingDetails.html">Budget Management</a>
+				<a href="TrainingRegister.html"  data-rel="dialog" data-transition="slideup">Register</a>
+			</li>
+			<li>
+				<a href="TrainingDetails.html">First Aid</a>
+				<a href="TrainingRegister.html"  data-rel="dialog" data-transition="slideup">Register</a>
+			</li>
+			<li><a href="TrainingDetails.html">Time Management</a></li>
+			<li><a href="TrainingDetails.html">Diversity in the Workplace</a></li>
+			<li><a href="TrainingDetails.html">Leadership Development Academy</a></li>
+			<li><a href="TrainingDetails.html">Negotiation Skills</a></li>
+			<li><a href="TrainingDetails.html">Sexual Harassment Prevention</a></li>
+			<li><a href="TrainingDetails.html">Stress Management</a></li>
+			<li><a href="TrainingDetails.html">Active Listening</a></li>
+			<li><a href="TrainingDetails.html">Disaster Response Planning</a></li>
+			<li><a href="TrainingDetails.html">Evacuation Practices</a></li>
+			<li><a href="TrainingDetails.html">Conflict Resolution and Management</a></li>
+			<li><a href="TrainingDetails.html">Better Business Writing</a></li>
+			<li><a href="#">Art of Delegation</a></li>
+			<li><a href="#">Improving Employee Performance</a></li>
+			<li><a href="#">Hiring Retention and Termination</a></li>
+			<li><a href="#">Discipline and Documentation of Employees</a></li>
+			<li><a href="#">Project Management</a></li>
+			<li><a href="#">Legal Issues in Management</a></li>
+		</ul>
+	</div><!-- /content -->
+</div><!-- /page -->
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
+</body>
 </html>
