@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>E-Learning System</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
+</head> 
+<body> 
+
+<div data-role="page" id="TopicsList">
+
+	<div data-role="header">
+		<h1>Register</h1>		
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div data-role="fieldcontain">	
+		    <label for="pName">Participant Name:</label>
+		    <input type="text" name="name" id="pName" value=""  />
+	    </div>
+	    <div data-role="fieldcontain">
+		    <label for="pEmail">Email ID:</label>
+		    <input type="email" name="email" id="pEmail" value=""  />
+		</div>
+	    <div data-role="fieldcontain">
+		    <label for="pContactNo">Contact No:</label>
+		    <input type="tel" name="ContactNo" id="pContactNo" value=""  />
+		</div>
+		<div data-role="fieldcontain">
+		    <fieldset data-role="controlgroup" data-type="horizontal">
+		     	<legend>Gender:</legend>
+		         	<input type="radio" name="radio-view" id="radio-view-m" value="Male"  />
+		         	<label for="radio-view-m">Male</label>
+		         	<input type="radio" name="radio-view" id="radio-view-f" value="Female"  />
+		         	<label for="radio-view-f">Female</label>
+		    </fieldset>
+		</div>
+	    <div data-role="fieldcontain">
+			<label for="exposureLevel">Previous Exposure Level:</label>
+			<input type="range" name="slider" id="exposureLevel" value="4" min="1" max="10" step="5" />
+		</div>		
+		<input type="submit" value="Submit" />
+		<p>
+			<a href="Training.htm" data-role="button">Go back to list of training</a>
+		</p>		
+	</div><!-- /content -->
+</div><!-- /page -->
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
+</body>
+</html>
